@@ -1,0 +1,21 @@
+@import url(styles/reset.css);
+@import url(styles/header.css);
+@import url(styles/schedule.css);
+
+:root {
+    --fonte-principal: "Montserrat", sans-serif;
+    --cor-cinza: #464646;
+    --cor-cinza-claro: #A3A3A3;
+    --cor-branca: #FFFFFF;
+    --cor-branca-secudaria: #F6F6F6;
+    --cor-laranja: #FFB050;
+    --cor-azul-claro: #4894FF;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--cor-cinza);
+    background-color: var(--cor-branca-secudaria);
+}
