@@ -4,6 +4,8 @@
 
 GitHub Pages: https://samuelargentino.github.io/Challenge7daysMobileFirst/
 
+Vercel: https://challenge7days-mobile-first.vercel.app/
+
 ## Ferramentas utilizadas:
 
 * HTML
