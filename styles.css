@@ -1,6 +1,10 @@
 @import url(styles/reset.css);
 @import url(styles/header.css);
 @import url(styles/schedule.css);
+@import url(styles/footer.css);
+@import url(styles/button.css);
+@import url(styles/footermenu.css);
+@import url(styles/botao.css);
 
 :root {
     --fonte-principal: "Montserrat", sans-serif;

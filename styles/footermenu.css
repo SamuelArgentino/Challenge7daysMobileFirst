@@ -1,0 +1,42 @@
+.rodape__menu {
+    padding: 0.5em 2em 1.5em 2em;
+    background-color: var(--cor-branca);
+    border-radius: 18px 18px 0 0;
+}
+
+.rodape__menu__lista {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape__menu__lista-links {
+    padding: 2.2em 0 0 0;
+    font-size: 12px;
+    color: var(--cor-cinza);
+    opacity: 40%;
+}
+
+.imgconsultas {
+    background: url(/img/calendarioicone.svg) no-repeat;
+    background-position: center;
+    background-position-y: 0.1em;
+    /*filter: invert(20%) sepia(243%) saturate(1576%) hue-rotate(-21deg) brightness(137%) contrast(73%);*/
+}
+
+.imgclientes {
+    background: url(/img/clientesicone.svg) no-repeat;
+    background-position: center;
+    background-position-y: 0.1em;
+}
+
+.imgrelatorios {
+    background: url(/img/relatoriosicone.svg) no-repeat;
+    background-position: center;
+    background-position-y: 0.3em;
+}
+
+.imgmenu {
+    background: url(/img/menuicone.svg) no-repeat;
+    background-position: center;
+    background-position-y: 0.5em;
+}
