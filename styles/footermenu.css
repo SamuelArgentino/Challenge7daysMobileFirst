@@ -17,25 +17,25 @@
 }
 
 .imgconsultas {
-    background: url(/img/calendarioicone.svg) no-repeat;
+    background: url(../img/calendarioicone.svg) no-repeat;
     background-position: center;
     background-position-y: 0.1em;
 }
 
 .imgclientes {
-    background: url(/img/clientesicone.svg) no-repeat;
+    background: url(../img/clientesicone.svg) no-repeat;
     background-position: center;
     background-position-y: 0.1em;
 }
 
 .imgrelatorios {
-    background: url(/img/relatoriosicone.svg) no-repeat;
+    background: url(../img/relatoriosicone.svg) no-repeat;
     background-position: center;
     background-position-y: 0.3em;
 }
 
 .imgmenu {
-    background: url(/img/menuicone.svg) no-repeat;
+    background: url(../img/menuicone.svg) no-repeat;
     background-position: center;
     background-position-y: 0.5em;
 }
@@ -76,25 +76,25 @@
     }
 
     .imgconsultas-desktop {
-        background: url(/img/calendarioicone.svg) no-repeat;
+        background: url(../img/calendarioicone.svg) no-repeat;
         background-size: 60px;
         background-position-y: 1.6em;
     }
 
     .imgclientes-desktop {
-        background: url(/img/clientesicone.svg) no-repeat;
+        background: url(../img/clientesicone.svg) no-repeat;
         background-size: 60px;
         background-position-y: 2.2em;
     }
 
     .imgrelatorios-desktop {
-        background: url(/img/relatoriosicone.svg) no-repeat;
+        background: url(../img/relatoriosicone.svg) no-repeat;
         background-size: 60px;
         background-position-y: 1.3em;
     }
 
     .imgmenu-desktop {
-        background: url(/img/menuicone.svg) no-repeat;
+        background: url(../img/menuicone.svg) no-repeat;
         background-size: 60px;
         background-position-y: 2.5em;
     }
@@ -111,25 +111,25 @@
     }
 
     .imgconsultas-desktop:hover {
-        background: url(/img/calendarioiconehover.svg) no-repeat;
+        background: url(../img/calendarioiconehover.svg) no-repeat;
         background-size: 60px;
         background-position-y: 1.6em;
     }
 
     .imgclientes-desktop:hover {
-        background: url(/img/clientesiconehover.svg) no-repeat;
+        background: url(../img/clientesiconehover.svg) no-repeat;
         background-size: 60px;
         background-position-y: 2.2em;
     }
 
     .imgrelatorios-desktop:hover {
-        background: url(/img/relatoriosiconehover.svg) no-repeat;
+        background: url(../img/relatoriosiconehover.svg) no-repeat;
         background-size: 60px;
         background-position-y: 1.3em;
     }
 
     .imgmenu-desktop:hover {
-        background: url(/img/menuiconehover.svg) no-repeat;
+        background: url(../img/menuiconehover.svg) no-repeat;
         background-size: 60px;
         background-position-y: 2.5em;
     }
