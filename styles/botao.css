@@ -89,6 +89,13 @@
     transform: scale(1);
   }
 
+  @media screen and (min-width: 768px) {
+    .botao__rodape-cadastro {
+      cursor: pointer;
+    }
+  }
+
+
   @media screen and (min-width: 1440px) {
     .botao__rodape {
         display: none;
