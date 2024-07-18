@@ -5,6 +5,7 @@
 @import url(styles/button.css);
 @import url(styles/footermenu.css);
 @import url(styles/botao.css);
+@import url(styles/consultas.css);
 
 :root {
     --fonte-principal: "Montserrat", sans-serif;
@@ -22,4 +23,17 @@ body {
     font-weight: 400;
     color: var(--cor-cinza);
     background-color: var(--cor-branca-secudaria);
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        width: 80%;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    main {
+        display: block;
+    }
 }

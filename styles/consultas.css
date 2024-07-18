@@ -1,0 +1,61 @@
+.paginaconsultas {
+    text-align: center;
+    background: var(--cor-branca);
+    margin: 8% 20% 0 20%;
+    border-radius: 26px;
+    border: 1px solid #dadada;
+    padding: 2em 0;
+    display: none;
+}
+
+.paginaconsultas__campos {
+    display: grid;
+    width: 45%;
+    margin-left: 27%;
+    padding-bottom: 2em;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--cor-cinza-claro);
+}
+
+.local {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em;
+}
+
+.paginaconsultas-titulo {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--cor-cinza-claro);
+    padding-bottom: 1em;
+}
+
+.paginaconsultas__campos-input {
+    margin-top: 1em;
+    border-radius: 16px;
+    border: 1px solid var(--cor-cinza);
+    padding: 0.4em 0;
+    text-align: center;
+}
+
+.paginaconsultas__campos-input::placeholder {
+    font-family: var(--fonte-principal);
+}
+
+.paginaconsultas__botao {
+    padding: 1em 2em;
+    font-weight: 700;
+    color: var(--cor-branca);
+    background-color: var(--cor-cinza-claro);
+    border-radius: 26px;
+    border: 1px solid var(--cor-cinza);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.paginaconsultas__botao:hover {
+    background-color: var(--cor-azul-claro);
+    border: 1px solid var(--cor-azul-claro);
+}

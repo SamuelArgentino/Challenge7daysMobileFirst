@@ -20,3 +20,25 @@
     color: var(--cor-cinza-claro);
 }
 
+@media screen and (min-width: 768px) {
+    .cabecalho__imagem {
+        width: 10%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cabecalho__imagem {
+        width: 10%;
+        border-radius: 100px;
+    }
+
+    .cabecalho__titulo {
+        font-size: 31px;
+        font-weight: 700;
+    }
+
+    .cabecalho__texto {
+        margin: 1em 0 0 0.2em;
+        font-size: 18px;
+    }
+}

@@ -14,8 +14,9 @@
 </head>
 
 <body>
+    <main id="menuclientes">
     <header class="cabecalho">
-        <img src="img/perfil.svg" alt="Foto da Dra. Kassandra" class="cabecalho__imagem">
+        <img src="img/perfil.svg" alt="Foto da Dr. Sônia" class="cabecalho__imagem">
         <div class="cabecalho__conteudo">
             <h1 class="cabecalho__titulo">Olá, Sônia</h1>
             <p class="cabecalho__texto">Mais 4 consultas hoje</p>
@@ -24,6 +25,7 @@
 
     <h2 class="dia">Hoje</h2>
 
+    <div class="agenda">
     <section class="card__agenda">
         <div class="card__header">
             <img src="img/cliente1.svg" alt="Foto do Cliente" class="card__imagem-cliente">
@@ -71,9 +73,11 @@
             <button class="card__botoes__remota-audio">Ligar por áudio</button>
         </div>
     </section>
+    </div>
 
     <h2 class="dia">Amanhã</h2>
 
+    <div class="agenda">
     <section class="card__agenda">
         <div class="card__header">
             <img src="img/cliente4.svg" alt="Foto do Cliente" class="card__imagem-cliente">
@@ -136,9 +140,11 @@
             <button class="card__botoes__local-endereco">Ver endereço</button>
         </div>
     </section>
+</div>
 
     <h2 class="dia">Quarta-feira</h2>
 
+    <div class="agenda">
     <section class="card__agenda">
         <div class="card__header">
             <img src="img/cliente4.svg" alt="Foto do Cliente" class="card__imagem-cliente">
@@ -201,6 +207,7 @@
             <button class="card__botoes__local-endereco">Ver endereço</button>
         </div>
     </section>
+    </div>
 
     <section class="rodape__menu">
         <nav>
@@ -212,31 +219,60 @@
             </ul>
          </nav>
     </section>
-
-    <div class="botao__flutuante">
-
-        <button class="botao__flutuante-cadastro btn-primario">
-          <span></span>
-        </button>
-        <ul class="botao__flutuante-opcoes">
-
-            <li>
-              <span>
-                Nova consulta na casa do cliente
-              </span>
-              <button class="botao__flutuante-item btn-primario local"><span class="local"></span></button>
+</main>
+    <section class="rodape__menu-desktop borda">
+        <nav>
+            <ul class="rodape__menu__lista-desktop">
+                <li onclick="mostrarConsultas()" class="rodape__menu__lista-links-desktop imgconsultas-desktop">Consultas</li>
+                <li onclick="mostrarClientes()" class="rodape__menu__lista-links-desktop imgclientes-desktop">Clientes</li>
+                <li class="rodape__menu__lista-links-desktop imgrelatorios-desktop">Relatórios</li>
+                <li class="rodape__menu__lista-links-desktop imgmenu-desktop">Menu</li>
+            </ul>
+         </nav>
+    </section>
+      
+      <div class="botao__rodape">
+        <button class="botao__rodape-cadastro"><span><img src="img/maisicone.svg" class="botao__rodape-imgmais"></span></button>
+        <ul class="botao__rodape__opcoes">
+            <li class="botao__rodape__opcoes-listalocalizacao">
+                <span class="botao__rodape-localizacao-texto">Nova consulta na casa do paciente</span>
+                <button class="botao__rodape-localizacao"><span><img src="img/pinfab.svg" class="botao__rodape-imglocalizacao"></span></button>
             </li>
-            <li>
-              <span>
-                Nova consulta por vídeo
-              </span>
-              <button class="botao__flutuante-item btn-primario"><span class="remoto"></span></button>
+            <li class="botao__rodape__opcoes-listacamera">
+                <span class="botao__rodape-camera-texto">Nova consulta por vídeo</span>
+                <button class="botao__rodape-camera"><span><img src="img/camerafab.svg" class="botao__rodape-imgcamera"></span></button>
             </li>
-  
-          </ul>
-        
+        </ul>
       </div>
 
+      <section id="menuconsultas" class="paginaconsultas">
+        <h2 class="paginaconsultas-titulo">Agendar consulta</h2>
+        <label class="paginaconsultas__campos">
+            Nome
+            <input type="text" class="paginaconsultas__campos-input" placeholder="Nome do paciente">
+         </label>
+         <label class="paginaconsultas__campos local">
+            Local:
+            <input type="checkbox" id="presencial" name="Presencial">
+            <label for="presencial">Presencial</label>
+            <input type="checkbox" id="remoto" name="Remoto">
+            <label for="remoto">Remoto</label>
+         </label>
+         <label class="paginaconsultas__campos">
+            Data
+            <input type="date" class="paginaconsultas__campos-input">
+         </label>
+         <label class="paginaconsultas__campos">
+            Horário
+            <input type="time" class="paginaconsultas__campos-input">
+         </label>
+         <label class="paginaconsultas__campos">
+            Observações
+            <input type="text" class="paginaconsultas__campos-input" placeholder="Informações adicionais">
+         </label>
+         <button class="paginaconsultas__botao">Enviar</button>
+      </section>
+      <script src="app.js"></script>
 </body>
 
 </html>

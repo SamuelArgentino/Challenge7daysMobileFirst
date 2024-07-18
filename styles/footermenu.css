@@ -20,7 +20,6 @@
     background: url(/img/calendarioicone.svg) no-repeat;
     background-position: center;
     background-position-y: 0.1em;
-    /*filter: invert(20%) sepia(243%) saturate(1576%) hue-rotate(-21deg) brightness(137%) contrast(73%);*/
 }
 
 .imgclientes {
@@ -39,4 +38,99 @@
     background: url(/img/menuicone.svg) no-repeat;
     background-position: center;
     background-position-y: 0.5em;
+}
+
+.rodape__menu-desktop {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .rodape__menu {
+        padding: 0.5em 15em 1.5em 15em;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .rodape__menu {
+        display: none;
+    }
+
+    .rodape__menu-desktop {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20%;
+        height: 100vh;
+        padding: 0;
+        background-color: var(--cor-branca);
+        border-right: 1px solid #dadada;
+    }   
+
+
+    .rodape__menu__lista-desktop{
+        padding: 1.5em 2em;
+        font-weight: 700;
+        font-size: 20px;
+        color: var(--cor-cinza);
+    }
+
+    .imgconsultas-desktop {
+        background: url(/img/calendarioicone.svg) no-repeat;
+        background-size: 60px;
+        background-position-y: 1.6em;
+    }
+
+    .imgclientes-desktop {
+        background: url(/img/clientesicone.svg) no-repeat;
+        background-size: 60px;
+        background-position-y: 2.2em;
+    }
+
+    .imgrelatorios-desktop {
+        background: url(/img/relatoriosicone.svg) no-repeat;
+        background-size: 60px;
+        background-position-y: 1.3em;
+    }
+
+    .imgmenu-desktop {
+        background: url(/img/menuicone.svg) no-repeat;
+        background-size: 60px;
+        background-position-y: 2.5em;
+    }
+
+    .rodape__menu__lista-links-desktop {
+        padding: 3em 0 1em 4em;
+        opacity: 40%;
+        cursor: pointer;
+    }
+
+    .rodape__menu__lista-links-desktop:hover {
+        color: var(--cor-azul-claro);
+        opacity: 100%;
+    }
+
+    .imgconsultas-desktop:hover {
+        background: url(/img/calendarioiconehover.svg) no-repeat;
+        background-size: 60px;
+        background-position-y: 1.6em;
+    }
+
+    .imgclientes-desktop:hover {
+        background: url(/img/clientesiconehover.svg) no-repeat;
+        background-size: 60px;
+        background-position-y: 2.2em;
+    }
+
+    .imgrelatorios-desktop:hover {
+        background: url(/img/relatoriosiconehover.svg) no-repeat;
+        background-size: 60px;
+        background-position-y: 1.3em;
+    }
+
+    .imgmenu-desktop:hover {
+        background: url(/img/menuiconehover.svg) no-repeat;
+        background-size: 60px;
+        background-position-y: 2.5em;
+    }
 }

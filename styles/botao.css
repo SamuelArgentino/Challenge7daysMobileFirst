@@ -1,97 +1,96 @@
-.botao__flutuante{
+  .botao__rodape {
     position: relative;
-  }
-  .botao__flutuante .botao__flutuante-cadastro{
-    position: absolute;
-    right: 16px;
-    bottom: 70px;
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    filter: drop-shadow(0 3px 6px #4894FF90);
-    z-index: 5;
-  }
-  
-  button.botao__flutuante-cadastro span{
-    position: absolute;
-    width: 75px;
-    height: 75px;
-    background-image: url('../img/maisicone.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    top: 58%;
-    left: 50%;
-    transform: translate(-50%,-50%);
   }
 
-  .botao__flutuante ul{
+  .botao__rodape-cadastro {
+    padding: 1.6em 1.6em 1.6em 1.61em;
+    background-color: var(--cor-azul-claro);
+    border-radius: 50%;
     position: absolute;
-    width: 100%;
+    right: 1em;
+    bottom: 6em;
+    border: none;
+  }
+
+  .botao__rodape-imgmais {
+    width: 18px;
+  }
+
+  .botao__rodape__opcoes {
     opacity: 0;
+    position: absolute;
+    transition: .3s ease;
+    transform: scale(0);
+    transform-origin: 90% bottom;
+    background: rgba(0, 0, 0 , 60%);
+    width: 100%;
     right: 0;
     bottom: 0;
-    padding: 80vh 0 20px 0;
+    padding: 100vh 0;
     padding-bottom: 130px;
-  
-    transition: .3s ease;
-      transform: scale(0);
-      transform-origin: 85% bottom;
-    background: radial-gradient(circle at bottom right, black, 20%, transparent);
-    z-index: 2;
   }
-  
-  .botao__flutuante-cadastro:focus + ul{
-    opacity: 1;
-      transform: scale(1);
-  }
-  
-  .botao__flutuante>ul li{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-right: 16px;
-    margin-bottom: 8px;
-  }
-  
-  .botao__flutuante ul li>span{
-    display: flex;
-    align-items: center;
-    height: 24px;
-    font-size: 12px;
-    background: var(--cor-branca);
-    border-radius: 20px;
-    padding: 0 8px;
-    margin-right: 4px;
-  }
-  
-  button.botao__flutuante-item{
-    display: flex;
-  
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    position: relative;
-    filter: drop-shadow(0 3px 6px #4894FF90);
-  }
-  button.botao__flutuante-item span{
+
+  .botao__rodape__opcoes-listalocalizacao {
     position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 57%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-position: center;
-    background-repeat: no-repeat;
+    right: 1em;
+    bottom: 17.2em;
+    display: flex;
+    align-items: center;
   }
-  
-  button.botao__flutuante-item span.local{
-    background-image: url('../img/pinfab.svg');
-    width: 75px;
-    height: 75px;
+
+  .botao__rodape-localizacao-texto {
+    background-color: var(--cor-branca);
+    color: var(--cor-cinza);
+    font-weight: 500;
+    padding: 0.5em 0.8em;
+    border-radius: 26px;
+    margin-right: 1em;
   }
-  
-  button.botao__flutuante-item span.remoto{
-    background-image: url('../img/camerafab.svg');
-    width: 75px;
-    height: 75px;
+
+  .botao__rodape-camera-texto {
+    background-color: var(--cor-branca);
+    color: var(--cor-cinza);
+    font-weight: 500;
+    padding: 0.5em 0.8em;
+    border-radius: 26px;
+    margin-right: 1em;
+  }
+
+  .botao__rodape__opcoes-listacamera {
+    position: absolute;
+    right: 1em;
+    bottom: 11.4em;
+  }
+
+  .botao__rodape-localizacao {
+    padding: 1.3em 1.5em 1.3em 1.5em;
+    background-color: var(--cor-azul-claro);
+    border-radius: 50%;
+    border: none;
+  }
+
+  .botao__rodape-camera {
+    padding: 1.6em 1.3em 1.6em 1.3em;
+    background-color: var(--cor-azul-claro);
+    border-radius: 50%;
+    border: none;
+  }
+
+  .botao__rodape-imglocalizacao {
+    width: 23px;
+  }
+
+  .botao__rodape-imgcamera {
+    width: 28px;
+  }
+
+  .botao__rodape-cadastro:focus + .botao__rodape__opcoes {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  @media screen and (min-width: 1440px) {
+    .botao__rodape {
+        display: none;
+    }
   }
