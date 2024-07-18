@@ -93,6 +93,14 @@
     .botao__rodape-cadastro {
       cursor: pointer;
     }
+
+    .botao__rodape-localizacao {
+     cursor: pointer;
+    }
+
+    .botao__rodape-camera {
+      cursor: pointer;
+    }
   }
 
 
